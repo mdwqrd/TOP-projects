@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Parkinsans:wght@300..800&display=swap');
+
+:root {
+    --label-font-size: 1.15rem;
+    --input-font-size: 1rem;
+    --button-padding-vert: 0.5rem;
+    --styling-brown-color: hsl(21, 23%, 33%);
+    --styling-button-color: hsl(21, 55%, 25%);
+    --styling-button-color-dark: hsl(21 55% 20%);
+    --styling-brown-color-transparent: hsl(21, 23%, 33%, 0.6);
+    --styling-white-color: hsl(360 0% 100%);
+    --container-padding: 1.3rem;
+}
+
+body {
+    font-family: "Parkinsans", sans-serif;
+    position: relative;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    align-content: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.main > div:not(.image-container) {
+    width: clamp(10vw, 75ch, 60vw);
+    padding: var(--container-padding);
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-container p1 {
+    font-size: 2rem;
+    text-shadow: -0.1em -2px 0.7rem hsla(0, 0%, 0%, 0.8);
+    font-weight: 400;
+}
+
+.title-container span {
+    letter-spacing: -0.05em;
+    font-size: 1.2rem;
+}
+
+.image-container {
+    max-width: 45vw;
+    max-height: auto;
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    right: 0;
+}
+
+.image-container > img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.image-credit {
+    position: absolute;
+    z-index: 1;
+
+    width: 100%;
+    background: hsla(360 0% 87.4% / 0.36);
+    color: white;
+    bottom: 7%;
+    
+    font-size: 1.4rem;
+    font-style: italic;
+
+    text-align: right;
+}
+
+.image-credit > a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.sign-container {
+    border: 2px solid black;
+    background: linear-gradient(135deg, white 30%, var(--styling-brown-color-transparent) 100%);
+    min-height: calc(var(--label-font-size) * 4 + var(--input-font-size) * 3 + var(--button-padding-vert) * 2);
+}
+
+.sign-forms-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10%;
+}
+
+.input-form label {
+    font-size: 1.15rem;
+    letter-spacing: 0.2rem;
+    font-weight: 500;
+}
+
+.input-form input {
+    font-size: 0.9rem;
+    border-radius: 2px;
+}
+
+.input-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: clamp(5vw, 30ch, 45%);
+}
+
+.sign-controls {
+    display: flex;
+    flex-direction: column;
+}
+
+.create-acc {
+    border: 0;
+    background-color: var(--styling-button-color);
+    color: var(--styling-white-color);
+    max-width: 16ch;
+    padding: 0.7rem;
+    border: outset var(--styling-button-color);
+    border-radius: 10px;
+    font-weight: 600;
+    text-shadow: 0 0.2em 0.1em black;
+}
+
+.create-acc:hover {
+    cursor: pointer;
+    background-color: hsl(from var(--styling-button-color) h s calc(l + 8));
+}
+
+.sign-container > * > *{
+    margin: 0.3rem 0;
+}
+
+.image-credit {
+    font-family: sans-serif;
+}
+
+

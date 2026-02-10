@@ -14,25 +14,34 @@
                 <div id="title" class="sidebar-option">Dashboard</div>
             </header>
             <div class="sidebar-menu-container">
-                <div class="sidebar-option">Home</div>
-                <div class="sidebar-option">Profile</div>
-                <div class="sidebar-option">Message</div>
-                <div class="sidebar-option">History</div>
-                <div class="sidebar-option">Tasks</div>
-                <div class="sidebar-option">Communities</div>
+                <div class="sidebar-option"><img src="./icons/home-white.svg" class="home">Home</div>
+                <div class="sidebar-option"><img src="./icons/profile-white.svg">Profile</div>
+                <div class="sidebar-option"><img src="./icons/chat-white.svg">Message</div>
+                <div class="sidebar-option"><img src="./icons/history-white.svg">History</div>
+                <div class="sidebar-option"><img src="./icons/tasks-white.svg">Tasks</div>
+                <div class="sidebar-option"><img src="./icons/community-white.svg">Communities</div>
             </div>
             <div class="sidebar-settings-container">
-                <div class="sidebar-option">Settings</div>
-                <div class="sidebar-option">Support</div>
-                <div class="sidebar-option">Privacy</div>
+                <div class="sidebar-option"><img src="./icons/cog-white.svg">Settings</div>
+                <div class="sidebar-option"><img src="./icons/question-white.svg">Support</div>
+                <div class="sidebar-option"><img src="./icons/shield-white.svg">Privacy</div>
             </div>
         </div>
         <div class="header">
             <div class="header-search-container">
+                <img src="./icons/magnify-blue.svg">
                 <input type="search" id="search-bar" name="q">
             </div>
             <div class="header-acc-container">acc info</div>
-            <div class="header-greeting-container">Greeting</div>
+            <div class="header-greeting-container">
+                <img src="https://github.com/mdwqrd.png" alt="My Epic PFP">
+                <div class="greeting-container">
+                    Hello there,
+                    <div>
+                        <span class="user-name bold">Suppose there is your name </span><span class="user-tag bold">(@andtag)</span>
+                    </div>
+                </div>
+            </div>
             <div class="header-button-container">
                 <button id="new-btn" class="header-btn bold">New</button>
                 <button id="upload-btn" class="header-btn bold">Upload</button>
@@ -40,7 +49,7 @@
             </div>
         </div>
         <div class="content">
-            <div class="content-project-container">
+            <div class="content-project-container"> 
                 <div class="project-card">
                     <h3 class="project-title">Project Title</h3>
                     <div class="project-desc">Description and other stuff related to the project</div>
@@ -84,8 +93,32 @@
                     </div>
                 </div>
             </div>
-            <div class="content-announcment-container">Announcment</div>
-            <div class="content-trending-container">Trending</div>
+            <div class="content-announcment-container">
+                Announcment
+                <div id="announcment-container" class="content-side-pad">
+                    <div class="announcment">
+                        <p4 class="bold">Important Announcment Title</p4>
+                        Filler contents for announcment block that should be having a separator line between 2 announcment, take into account
+                    </div>
+                    <div class="announcment">
+                        <p4 class="bold">Important Announcment Title</p4>
+                        Filler contents for announcment block that should be having a separator line between 2 announcment, take into account
+                    </div>
+                    <div class="announcment">
+                        <p4 class="bold">Important Announcment Title</p4>
+                        Filler contents for announcment block that should be having a separator line between 2 announcment, take into account
+                    </div>
+                </div>
+            </div>
+            <div class="content-trending-container">
+                Trending
+                <div id="trending-container" class="content-side-pad">
+                    <div class="trending"></div>
+                    <div class="trending"></div>
+                    <div class="trending"></div>
+                    <div class="trending"></div>
+                </div>
+            </div>
         </div>
     </div>
 </body>

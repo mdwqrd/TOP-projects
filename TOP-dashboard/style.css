@@ -189,7 +189,6 @@ body {
 }
 
 .content > div {
-    border: solid 2px black;
 }
 
 .content-project-container {
@@ -226,6 +225,8 @@ body {
     height: min(100%, 20rem);
     overflow: clip;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-card::before {
@@ -236,6 +237,15 @@ body {
     left: 0;
     width: 12px;
     background: var(--styling-mustard);
+}
+
+.project-control-container {
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+    justify-content: flex-end;
+    gap: 1em;
 }
 
 .content-announcment-container,
